@@ -1,0 +1,227 @@
+llvm/lib/Target/WebAssembly/WebAssemblyISelLowering.cpp:68:    addRegisterClass(MVT::v16i8, &WebAssembly::V128RegClass);
+llvm/lib/Target/WebAssembly/WebAssemblyISelLowering.cpp:69:    addRegisterClass(MVT::v8i16, &WebAssembly::V128RegClass);
+llvm/lib/Target/WebAssembly/WebAssemblyISelLowering.cpp:70:    addRegisterClass(MVT::v4i32, &WebAssembly::V128RegClass);
+llvm/lib/Target/WebAssembly/WebAssemblyISelLowering.cpp:72:    addRegisterClass(MVT::v2i64, &WebAssembly::V128RegClass);
+llvm/lib/Target/SystemZ/SystemZISelLowering.cpp:120:      addRegisterClass(MVT::v16i8, &SystemZ::VR128BitRegClass);
+llvm/lib/Target/SystemZ/SystemZISelLowering.cpp:121:      addRegisterClass(MVT::v8i16, &SystemZ::VR128BitRegClass);
+llvm/lib/Target/SystemZ/SystemZISelLowering.cpp:122:      addRegisterClass(MVT::v4i32, &SystemZ::VR128BitRegClass);
+llvm/lib/Target/SystemZ/SystemZISelLowering.cpp:123:      addRegisterClass(MVT::v2i64, &SystemZ::VR128BitRegClass);
+llvm/lib/Target/AArch64/AArch64ISelLowering.cpp:418:    addRegisterClass(MVT::v16i8, &AArch64::FPR8RegClass);
+llvm/lib/Target/AArch64/AArch64ISelLowering.cpp:419:    addRegisterClass(MVT::v8i16, &AArch64::FPR16RegClass);
+llvm/lib/Target/AArch64/AArch64ISelLowering.cpp:442:    addRegisterClass(MVT::nxv1i1, &AArch64::PPRRegClass);
+llvm/lib/Target/AArch64/AArch64ISelLowering.cpp:443:    addRegisterClass(MVT::nxv2i1, &AArch64::PPRRegClass);
+llvm/lib/Target/AArch64/AArch64ISelLowering.cpp:444:    addRegisterClass(MVT::nxv4i1, &AArch64::PPRRegClass);
+llvm/lib/Target/AArch64/AArch64ISelLowering.cpp:445:    addRegisterClass(MVT::nxv8i1, &AArch64::PPRRegClass);
+llvm/lib/Target/AArch64/AArch64ISelLowering.cpp:446:    addRegisterClass(MVT::nxv16i1, &AArch64::PPRRegClass);
+llvm/lib/Target/AArch64/AArch64ISelLowering.cpp:449:    addRegisterClass(MVT::nxv16i8, &AArch64::ZPRRegClass);
+llvm/lib/Target/AArch64/AArch64ISelLowering.cpp:450:    addRegisterClass(MVT::nxv8i16, &AArch64::ZPRRegClass);
+llvm/lib/Target/AArch64/AArch64ISelLowering.cpp:451:    addRegisterClass(MVT::nxv4i32, &AArch64::ZPRRegClass);
+llvm/lib/Target/AArch64/AArch64ISelLowering.cpp:452:    addRegisterClass(MVT::nxv2i64, &AArch64::ZPRRegClass);
+llvm/lib/Target/AArch64/AArch64RegisterInfo.td:516:def FPR64 : RegisterClass<"AArch64", [f64, i64, v2f32, v1f64, v8i8, v4i16, v2i32,
+llvm/lib/Target/AArch64/AArch64RegisterInfo.td:1261:def ZPR_K : RegisterClass<"AArch64", [nxv16i8], 128,
+llvm/lib/Target/X86/X86ISelLowering.cpp:1090:    addRegisterClass(MVT::v16i8, Subtarget.hasVLX() ? &X86::VR128XRegClass
+llvm/lib/Target/X86/X86ISelLowering.cpp:1092:    addRegisterClass(MVT::v8i16, Subtarget.hasVLX() ? &X86::VR128XRegClass
+llvm/lib/Target/X86/X86ISelLowering.cpp:1096:    addRegisterClass(MVT::v4i32, Subtarget.hasVLX() ? &X86::VR128XRegClass
+llvm/lib/Target/X86/X86ISelLowering.cpp:1098:    addRegisterClass(MVT::v2i64, Subtarget.hasVLX() ? &X86::VR128XRegClass
+llvm/lib/Target/X86/X86ISelLowering.cpp:1439:    addRegisterClass(MVT::v32i8,  Subtarget.hasVLX() ? &X86::VR256XRegClass
+llvm/lib/Target/X86/X86ISelLowering.cpp:1441:    addRegisterClass(MVT::v16i16, Subtarget.hasVLX() ? &X86::VR256XRegClass
+llvm/lib/Target/X86/X86ISelLowering.cpp:1445:    addRegisterClass(MVT::v8i32,  Subtarget.hasVLX() ? &X86::VR256XRegClass
+llvm/lib/Target/X86/X86ISelLowering.cpp:1449:    addRegisterClass(MVT::v4i64,  Subtarget.hasVLX() ? &X86::VR256XRegClass
+llvm/lib/Target/X86/X86ISelLowering.cpp:1724:    addRegisterClass(MVT::v1i1,   &X86::VK1RegClass);
+llvm/lib/Target/X86/X86ISelLowering.cpp:1725:    addRegisterClass(MVT::v2i1,   &X86::VK2RegClass);
+llvm/lib/Target/X86/X86ISelLowering.cpp:1726:    addRegisterClass(MVT::v4i1,   &X86::VK4RegClass);
+llvm/lib/Target/X86/X86ISelLowering.cpp:1727:    addRegisterClass(MVT::v8i1,   &X86::VK8RegClass);
+llvm/lib/Target/X86/X86ISelLowering.cpp:1728:    addRegisterClass(MVT::v16i1,  &X86::VK16RegClass);
+llvm/lib/Target/X86/X86ISelLowering.cpp:1802:    addRegisterClass(MVT::v16i32, &X86::VR512RegClass);
+llvm/lib/Target/X86/X86ISelLowering.cpp:1804:    addRegisterClass(MVT::v8i64,  &X86::VR512RegClass);
+llvm/lib/Target/X86/X86ISelLowering.cpp:1806:    addRegisterClass(MVT::v32i16, &X86::VR512RegClass);
+llvm/lib/Target/X86/X86ISelLowering.cpp:1808:    addRegisterClass(MVT::v64i8,  &X86::VR512RegClass);
+llvm/lib/Target/X86/X86ISelLowering.cpp:2197:    addRegisterClass(MVT::v32i1,  &X86::VK32RegClass);
+llvm/lib/Target/X86/X86ISelLowering.cpp:2198:    addRegisterClass(MVT::v64i1,  &X86::VK64RegClass);
+llvm/lib/Target/X86/X86FastISel.cpp:2646:    const TargetRegisterClass *RC = TLI.getRegClassFor(MVT::v8i16);
+llvm/lib/Target/X86/X86RegisterInfo.td:778:def VR128 : RegisterClass<"X86", [v4f32, v2f64, v8f16, v8bf16, v16i8, v8i16, v4i32, v2i64, f128],
+llvm/lib/Target/X86/X86RegisterInfo.td:780:def VR256 : RegisterClass<"X86", [v8f32, v4f64, v16f16, v16bf16, v32i8, v16i16, v8i32, v4i64],
+llvm/lib/Target/X86/X86RegisterInfo.td:798:def VR512 : RegisterClass<"X86", [v16f32, v8f64, v32f16, v32bf16, v64i8, v32i16, v16i32, v8i64],
+llvm/lib/Target/X86/X86RegisterInfo.td:802:def VR512_0_15 : RegisterClass<"X86", [v16f32, v8f64, v64i8, v32i16, v16i32, v8i64],
+llvm/lib/Target/X86/X86RegisterInfo.td:823:def VR128X : RegisterClass<"X86", [v4f32, v2f64, v8f16, v8bf16, v16i8, v8i16, v4i32, v2i64, f128],
+llvm/lib/Target/X86/X86RegisterInfo.td:830:def VR256X : RegisterClass<"X86", [v8f32, v4f64, v16f16, v16bf16, v32i8, v16i16, v8i32, v4i64],
+llvm/lib/Target/X86/X86RegisterInfo.td:839:def VK1     : RegisterClass<"X86", [v1i1],  16,  (sequence "K%u", 0, 7)> {let Size = 16;}
+llvm/lib/Target/X86/X86RegisterInfo.td:840:def VK2     : RegisterClass<"X86", [v2i1],  16,  (add VK1)> {let Size = 16;}
+llvm/lib/Target/X86/X86RegisterInfo.td:841:def VK4     : RegisterClass<"X86", [v4i1],  16,  (add VK2)> {let Size = 16;}
+llvm/lib/Target/X86/X86RegisterInfo.td:842:def VK8     : RegisterClass<"X86", [v8i1],  16,  (add VK4)> {let Size = 16;}
+llvm/lib/Target/X86/X86RegisterInfo.td:843:def VK16    : RegisterClass<"X86", [v16i1], 16, (add VK8)> {let Size = 16;}
+llvm/lib/Target/X86/X86RegisterInfo.td:844:def VK32    : RegisterClass<"X86", [v32i1], 32, (add VK16)> {let Size = 32;}
+llvm/lib/Target/X86/X86RegisterInfo.td:845:def VK64    : RegisterClass<"X86", [v64i1], 64, (add VK32)> {let Size = 64;}
+llvm/lib/Target/X86/X86RegisterInfo.td:853:def VK1WM   : RegisterClass<"X86", [v1i1],  16,  (sub VK1, K0)> {let Size = 16;}
+llvm/lib/Target/X86/X86RegisterInfo.td:854:def VK2WM   : RegisterClass<"X86", [v2i1],  16,  (sub VK2, K0)> {let Size = 16;}
+llvm/lib/Target/X86/X86RegisterInfo.td:855:def VK4WM   : RegisterClass<"X86", [v4i1],  16,  (sub VK4, K0)> {let Size = 16;}
+llvm/lib/Target/X86/X86RegisterInfo.td:856:def VK8WM   : RegisterClass<"X86", [v8i1],  16,  (sub VK8, K0)> {let Size = 16;}
+llvm/lib/Target/X86/X86RegisterInfo.td:857:def VK16WM  : RegisterClass<"X86", [v16i1], 16, (add VK8WM)>   {let Size = 16;}
+llvm/lib/Target/X86/X86RegisterInfo.td:858:def VK32WM  : RegisterClass<"X86", [v32i1], 32, (add VK16WM)> {let Size = 32;}
+llvm/lib/Target/X86/X86RegisterInfo.td:859:def VK64WM  : RegisterClass<"X86", [v64i1], 64, (add VK32WM)> {let Size = 64;}
+llvm/lib/Target/Mips/MipsRegisterInfo.td:436:def MSA128B: RegisterClass<"Mips", [v16i8], 128,
+llvm/lib/Target/Mips/MipsRegisterInfo.td:438:def MSA128H: RegisterClass<"Mips", [v8i16, v8f16], 128,
+llvm/lib/Target/Mips/MipsRegisterInfo.td:440:def MSA128W: RegisterClass<"Mips", [v4i32, v4f32], 128,
+llvm/lib/Target/Mips/MipsRegisterInfo.td:442:def MSA128D: RegisterClass<"Mips", [v2i64, v2f64], 128,
+llvm/lib/Target/Mips/MipsRegisterInfo.td:444:def MSA128WEvens: RegisterClass<"Mips", [v4i32, v4f32], 128,
+llvm/lib/Target/Mips/MipsRegisterInfo.td:476:def DSPCC : RegisterClass<"Mips", [v4i8, v2i16], 32, (add DSPCCond)>;
+llvm/lib/Target/AMDGPU/SIISelLowering.cpp:96:  addRegisterClass(MVT::v2i32, &AMDGPU::SReg_64RegClass);
+llvm/lib/Target/AMDGPU/SIISelLowering.cpp:105:  addRegisterClass(MVT::v3i32, &AMDGPU::SGPR_96RegClass);
+llvm/lib/Target/AMDGPU/SIISelLowering.cpp:108:  addRegisterClass(MVT::v2i64, &AMDGPU::SGPR_128RegClass);
+llvm/lib/Target/AMDGPU/SIISelLowering.cpp:111:  addRegisterClass(MVT::v4i32, &AMDGPU::SGPR_128RegClass);
+llvm/lib/Target/AMDGPU/SIISelLowering.cpp:114:  addRegisterClass(MVT::v5i32, &AMDGPU::SGPR_160RegClass);
+llvm/lib/Target/AMDGPU/SIISelLowering.cpp:117:  addRegisterClass(MVT::v6i32, &AMDGPU::SGPR_192RegClass);
+llvm/lib/Target/AMDGPU/SIISelLowering.cpp:120:  addRegisterClass(MVT::v3i64, &AMDGPU::SGPR_192RegClass);
+llvm/lib/Target/AMDGPU/SIISelLowering.cpp:123:  addRegisterClass(MVT::v7i32, &AMDGPU::SGPR_224RegClass);
+llvm/lib/Target/AMDGPU/SIISelLowering.cpp:126:  addRegisterClass(MVT::v8i32, &AMDGPU::SGPR_256RegClass);
+llvm/lib/Target/AMDGPU/SIISelLowering.cpp:129:  addRegisterClass(MVT::v4i64, &AMDGPU::SGPR_256RegClass);
+llvm/lib/Target/AMDGPU/SIISelLowering.cpp:132:  addRegisterClass(MVT::v9i32, &AMDGPU::SGPR_288RegClass);
+llvm/lib/Target/AMDGPU/SIISelLowering.cpp:135:  addRegisterClass(MVT::v10i32, &AMDGPU::SGPR_320RegClass);
+llvm/lib/Target/AMDGPU/SIISelLowering.cpp:138:  addRegisterClass(MVT::v11i32, &AMDGPU::SGPR_352RegClass);
+llvm/lib/Target/AMDGPU/SIISelLowering.cpp:141:  addRegisterClass(MVT::v12i32, &AMDGPU::SGPR_384RegClass);
+llvm/lib/Target/AMDGPU/SIISelLowering.cpp:144:  addRegisterClass(MVT::v16i32, &AMDGPU::SGPR_512RegClass);
+llvm/lib/Target/AMDGPU/SIISelLowering.cpp:147:  addRegisterClass(MVT::v8i64, &AMDGPU::SGPR_512RegClass);
+llvm/lib/Target/AMDGPU/SIISelLowering.cpp:150:  addRegisterClass(MVT::v16i64, &AMDGPU::SGPR_1024RegClass);
+llvm/lib/Target/AMDGPU/SIISelLowering.cpp:165:    addRegisterClass(MVT::v2i16, &AMDGPU::SReg_32RegClass);
+llvm/lib/Target/AMDGPU/SIISelLowering.cpp:168:    addRegisterClass(MVT::v4i16, &AMDGPU::SReg_64RegClass);
+llvm/lib/Target/AMDGPU/SIISelLowering.cpp:171:    addRegisterClass(MVT::v8i16, &AMDGPU::SGPR_128RegClass);
+llvm/lib/Target/AMDGPU/SIISelLowering.cpp:174:    addRegisterClass(MVT::v16i16, &AMDGPU::SGPR_256RegClass);
+llvm/lib/Target/AMDGPU/SIISelLowering.cpp:177:    addRegisterClass(MVT::v32i16, &AMDGPU::SGPR_512RegClass);
+llvm/lib/Target/AMDGPU/SIISelLowering.cpp:182:  addRegisterClass(MVT::v32i32, &AMDGPU::VReg_1024RegClass);
+llvm/lib/Target/AMDGPU/SIRegisterInfo.td:396:def SGPR_32 : SIRegisterClass<"AMDGPU", [i32, f32, i16, f16, bf16, v2i16, v2f16, v2bf16], 32,
+llvm/lib/Target/AMDGPU/SIRegisterInfo.td:445:def TTMP_32 : SIRegisterClass<"AMDGPU", [i32, f32, v2i16, v2f16, v2bf16], 32,
+llvm/lib/Target/AMDGPU/SIRegisterInfo.td:703:def AGPR_32 : SIRegisterClass<"AMDGPU", [i32, f32, i16, f16, bf16, v2i16, v2f16, v2bf16], 32,
+llvm/lib/Target/AMDGPU/SIRegisterInfo.td:755:def Pseudo_SReg_32 : SIRegisterClass<"AMDGPU", [i32, f32, i16, f16, bf16, v2i16, v2f16, v2bf16], 32,
+llvm/lib/Target/AMDGPU/SIRegisterInfo.td:774:def SReg_32_XM0_XEXEC : SIRegisterClass<"AMDGPU", [i32, f32, i16, f16, bf16, v2i16, v2f16, v2bf16, i1], 32,
+llvm/lib/Target/AMDGPU/SIRegisterInfo.td:795:def SReg_32_XEXEC : SIRegisterClass<"AMDGPU", [i32, f32, i16, f16, bf16, v2i16, v2f16, v2bf16, i1], 32,
+llvm/lib/Target/AMDGPU/SIRegisterInfo.td:800:def SReg_32_XEXEC_HI : SIRegisterClass<"AMDGPU", [i32, f32, i16, f16, bf16, v2i16, v2f16, v2bf16, i1], 32,
+llvm/lib/Target/AMDGPU/SIRegisterInfo.td:805:def SReg_32_XM0 : SIRegisterClass<"AMDGPU", [i32, f32, i16, f16, bf16, v2i16, v2f16, v2bf16, i1], 32,
+llvm/lib/Target/AMDGPU/SIRegisterInfo.td:820:def SReg_32 : SIRegisterClass<"AMDGPU", [i32, f32, i16, f16, bf16, v2i16, v2f16, v2bf16, i1], 32,
+llvm/lib/Target/AMDGPU/SIRegisterInfo.td:832:def SRegOrLds_32 : SIRegisterClass<"AMDGPU", [i32, f32, i16, f16, bf16, v2i16, v2f16, v2bf16], 32,
+llvm/lib/Target/AMDGPU/SIRegisterInfo.td:861:def TTMP_64 : SIRegisterClass<"AMDGPU", [v2i32, i64, f64, v4i16, v4f16, v4bf16], 32,
+llvm/lib/Target/AMDGPU/SIRegisterInfo.td:867:def SReg_64_XEXEC_XNULL : SIRegisterClass<"AMDGPU", [v2i32, i64, v2f32, f64, i1, v4i16, v4f16, v4bf16], 32,
+llvm/lib/Target/AMDGPU/SIRegisterInfo.td:875:def SReg_64_XEXEC : SIRegisterClass<"AMDGPU", [v2i32, i64, v2f32, f64, i1, v4i16, v4f16, v4bf16], 32,
+llvm/lib/Target/AMDGPU/SIRegisterInfo.td:882:def SReg_64 : SIRegisterClass<"AMDGPU", [v2i32, i64, v2f32, f64, i1, v4i16, v4f16, v4bf16], 32,
+llvm/lib/Target/AMDGPU/SIRegisterInfo.td:891:def SReg_64_Encodable : SIRegisterClass<"AMDGPU", [v2i32, i64, v2f32, f64, i1, v4i16, v4f16, v4bf16], 32,
+llvm/lib/Target/AMDGPU/SIRegisterInfo.td:971:def VRegOrLds_32 : SIRegisterClass<"AMDGPU", [i32, f32, i16, f16, bf16, v2i16, v2f16, v2bf16], 32,
+llvm/lib/Target/AMDGPU/SIRegisterInfo.td:1102:def VS_32 : SIRegisterClass<"AMDGPU", [i32, f32, i16, f16, bf16, v2i16, v2f16, v2bf16], 32,
+llvm/lib/Target/AMDGPU/SIRegisterInfo.td:1110:def VS_32_Lo128 : SIRegisterClass<"AMDGPU", [i32, f32, i16, f16, bf16, v2i16, v2f16, v2bf16], 32,
+llvm/lib/Target/AMDGPU/SIRegisterInfo.td:1118:def VS_32_Lo256 : SIRegisterClass<"AMDGPU", [i32, f32, i16, f16, bf16, v2i16, v2f16, v2bf16], 32,
+llvm/lib/Target/AMDGPU/R600ISelLowering.cpp:36:  addRegisterClass(MVT::v2i32, &R600::R600_Reg64RegClass);
+llvm/lib/Target/AMDGPU/R600ISelLowering.cpp:38:  addRegisterClass(MVT::v4i32, &R600::R600_Reg128RegClass);
+llvm/lib/Target/AMDGPU/R600RegisterInfo.td:242:def R600_Reg128 : RegisterClass<"AMDGPU", [v4f32, v4i32], 128,
+llvm/lib/Target/AMDGPU/R600RegisterInfo.td:247:def R600_Reg128Vertical : RegisterClass<"AMDGPU", [v4f32, v4i32], 128,
+llvm/lib/Target/AMDGPU/R600RegisterInfo.td:251:def R600_Reg64 : RegisterClass<"AMDGPU", [v2f32, v2i32, i64, f64], 64,
+llvm/lib/Target/AMDGPU/R600RegisterInfo.td:254:def R600_Reg64Vertical : RegisterClass<"AMDGPU", [v2f32, v2i32], 64,
+llvm/lib/Target/Sparc/SparcISelLowering.cpp:1599:    addRegisterClass(MVT::v2i32, &SP::IntPairRegClass);
+llvm/lib/Target/Sparc/SparcRegisterInfo.td:349:def IntPair : RegisterClass<"SP", [v2i32], 64,
+llvm/lib/Target/Sparc/SparcRegisterInfo.td:390:  def CoprocPair : RegisterClass<"SP", [v2i32], 64,
+llvm/lib/Target/VE/VERegisterInfo.td:198:def VM : RegisterClass<"VE", [v256i1], 64, (sequence "VM%u", 0, 15)>;
+llvm/lib/Target/VE/VERegisterInfo.td:199:def VM512 : RegisterClass<"VE", [v512i1], 64, (sequence "VMP%u", 0, 7)>;
+llvm/lib/Target/VE/VEISelLowering.cpp:94:    addRegisterClass(MVT::v256i1, &VE::VMRegClass);
+llvm/lib/Target/VE/VEISelLowering.cpp:95:    addRegisterClass(MVT::v512i1, &VE::VM512RegClass);
+llvm/lib/Target/Hexagon/HexagonISelLoweringHVX.cpp:58:    addRegisterClass(MVT::v64i8,  &Hexagon::HvxVRRegClass);
+llvm/lib/Target/Hexagon/HexagonISelLoweringHVX.cpp:59:    addRegisterClass(MVT::v32i16, &Hexagon::HvxVRRegClass);
+llvm/lib/Target/Hexagon/HexagonISelLoweringHVX.cpp:60:    addRegisterClass(MVT::v16i32, &Hexagon::HvxVRRegClass);
+llvm/lib/Target/Hexagon/HexagonISelLoweringHVX.cpp:61:    addRegisterClass(MVT::v128i8, &Hexagon::HvxWRRegClass);
+llvm/lib/Target/Hexagon/HexagonISelLoweringHVX.cpp:62:    addRegisterClass(MVT::v64i16, &Hexagon::HvxWRRegClass);
+llvm/lib/Target/Hexagon/HexagonISelLoweringHVX.cpp:63:    addRegisterClass(MVT::v32i32, &Hexagon::HvxWRRegClass);
+llvm/lib/Target/Hexagon/HexagonISelLoweringHVX.cpp:72:    addRegisterClass(MVT::v16i1, &Hexagon::HvxQRRegClass);
+llvm/lib/Target/Hexagon/HexagonISelLoweringHVX.cpp:73:    addRegisterClass(MVT::v32i1, &Hexagon::HvxQRRegClass);
+llvm/lib/Target/Hexagon/HexagonISelLoweringHVX.cpp:74:    addRegisterClass(MVT::v64i1, &Hexagon::HvxQRRegClass);
+llvm/lib/Target/Hexagon/HexagonISelLoweringHVX.cpp:76:    addRegisterClass(MVT::v128i8,  &Hexagon::HvxVRRegClass);
+llvm/lib/Target/Hexagon/HexagonISelLoweringHVX.cpp:77:    addRegisterClass(MVT::v64i16,  &Hexagon::HvxVRRegClass);
+llvm/lib/Target/Hexagon/HexagonISelLoweringHVX.cpp:78:    addRegisterClass(MVT::v32i32,  &Hexagon::HvxVRRegClass);
+llvm/lib/Target/Hexagon/HexagonISelLoweringHVX.cpp:79:    addRegisterClass(MVT::v256i8,  &Hexagon::HvxWRRegClass);
+llvm/lib/Target/Hexagon/HexagonISelLoweringHVX.cpp:80:    addRegisterClass(MVT::v128i16, &Hexagon::HvxWRRegClass);
+llvm/lib/Target/Hexagon/HexagonISelLoweringHVX.cpp:81:    addRegisterClass(MVT::v64i32,  &Hexagon::HvxWRRegClass);
+llvm/lib/Target/Hexagon/HexagonISelLoweringHVX.cpp:82:    addRegisterClass(MVT::v32i1, &Hexagon::HvxQRRegClass);
+llvm/lib/Target/Hexagon/HexagonISelLoweringHVX.cpp:83:    addRegisterClass(MVT::v64i1, &Hexagon::HvxQRRegClass);
+llvm/lib/Target/Hexagon/HexagonISelLoweringHVX.cpp:84:    addRegisterClass(MVT::v128i1, &Hexagon::HvxQRRegClass);
+llvm/lib/Target/Hexagon/HexagonRegisterInfo.td:533:def IntRegs : RegisterClass<"Hexagon", [i32, f32, v4i8, v2i16], 32,
+llvm/lib/Target/Hexagon/HexagonRegisterInfo.td:545:def DoubleRegs : RegisterClass<"Hexagon", [i64, f64, v8i8, v4i16, v2i32], 64,
+llvm/lib/Target/Hexagon/HexagonISelLowering.cpp:1539:  addRegisterClass(MVT::v2i1,  &Hexagon::PredRegsRegClass);  // bbbbaaaa
+llvm/lib/Target/Hexagon/HexagonISelLowering.cpp:1540:  addRegisterClass(MVT::v4i1,  &Hexagon::PredRegsRegClass);  // ddccbbaa
+llvm/lib/Target/Hexagon/HexagonISelLowering.cpp:1541:  addRegisterClass(MVT::v8i1,  &Hexagon::PredRegsRegClass);  // hgfedcba
+llvm/lib/Target/Hexagon/HexagonISelLowering.cpp:1543:  addRegisterClass(MVT::v2i16, &Hexagon::IntRegsRegClass);
+llvm/lib/Target/Hexagon/HexagonISelLowering.cpp:1544:  addRegisterClass(MVT::v4i8,  &Hexagon::IntRegsRegClass);
+llvm/lib/Target/Hexagon/HexagonISelLowering.cpp:1546:  addRegisterClass(MVT::v8i8,  &Hexagon::DoubleRegsRegClass);
+llvm/lib/Target/Hexagon/HexagonISelLowering.cpp:1547:  addRegisterClass(MVT::v4i16, &Hexagon::DoubleRegsRegClass);
+llvm/lib/Target/Hexagon/HexagonISelLowering.cpp:1548:  addRegisterClass(MVT::v2i32, &Hexagon::DoubleRegsRegClass);
+llvm/lib/Target/SPIRV/SPIRVRegisterInfo.td:39:  def vID : RegisterClass<"SPIRV", [v2i64], 64, (add vID0)>;
+llvm/lib/Target/PowerPC/PPCISelLowering.cpp:949:    addRegisterClass(MVT::v4i32, &PPC::VRRCRegClass);
+llvm/lib/Target/PowerPC/PPCISelLowering.cpp:950:    addRegisterClass(MVT::v8i16, &PPC::VRRCRegClass);
+llvm/lib/Target/PowerPC/PPCISelLowering.cpp:951:    addRegisterClass(MVT::v16i8, &PPC::VRRCRegClass);
+llvm/lib/Target/PowerPC/PPCISelLowering.cpp:1076:      addRegisterClass(MVT::v4i32, &PPC::VSRCRegClass);
+llvm/lib/Target/PowerPC/PPCISelLowering.cpp:1189:      addRegisterClass(MVT::v2i64, &PPC::VSRCRegClass);
+llvm/lib/Target/PowerPC/PPCISelLowering.cpp:1211:      addRegisterClass(MVT::v2i64, &PPC::VRRCRegClass);
+llvm/lib/Target/PowerPC/PPCISelLowering.cpp:1212:      addRegisterClass(MVT::v1i128, &PPC::VRRCRegClass);
+llvm/lib/Target/PowerPC/PPCISelLowering.cpp:1354:    addRegisterClass(MVT::v256i1, &PPC::VSRpRCRegClass);
+llvm/lib/Target/PowerPC/PPCISelLowering.cpp:1360:      addRegisterClass(MVT::v512i1, &PPC::WACCRCRegClass);
+llvm/lib/Target/PowerPC/PPCISelLowering.cpp:1361:      addRegisterClass(MVT::v1024i1, &PPC::DMRRCRegClass);
+llvm/lib/Target/PowerPC/PPCISelLowering.cpp:1362:      addRegisterClass(MVT::v2048i1, &PPC::DMRpRCRegClass);
+llvm/lib/Target/PowerPC/PPCISelLowering.cpp:1368:      addRegisterClass(MVT::v512i1, &PPC::UACCRCRegClass);
+llvm/lib/Target/PowerPC/PPCRegisterInfoDMR.td:136:def DMRROWRC :  RegisterClass<"PPC", [v128i1], 128,
+llvm/lib/Target/PowerPC/PPCRegisterInfoDMR.td:141:def DMRROWpRC :  RegisterClass<"PPC", [v256i1], 128,
+llvm/lib/Target/PowerPC/PPCRegisterInfoDMR.td:146:def WACCRC : RegisterClass<"PPC", [v512i1], 128,
+llvm/lib/Target/PowerPC/PPCRegisterInfoDMR.td:151:def WACC_HIRC : RegisterClass<"PPC", [v512i1], 128,
+llvm/lib/Target/PowerPC/PPCRegisterInfoDMR.td:156:def DMRRC : RegisterClass<"PPC", [v1024i1], 128,
+llvm/lib/Target/PowerPC/PPCRegisterInfoDMR.td:161:def DMRpRC : RegisterClass<"PPC", [v2048i1], 128,
+llvm/lib/Target/PowerPC/PPCRegisterInfoMMA.td:48:def ACCRC : RegisterClass<"PPC", [v512i1], 128, (add ACC0, ACC1, ACC2, ACC3,
+llvm/lib/Target/PowerPC/PPCRegisterInfoMMA.td:73:def UACCRC : RegisterClass<"PPC", [v512i1], 128,
+llvm/lib/Target/PowerPC/PPCRegisterInfoMMA.td:93:  RegisterClass<"PPC", [v256i1], 128,
+llvm/lib/Target/PowerPC/PPCRegisterInfo.td:427:def VSLRC : RegisterClass<"PPC", [v4i32,v4f32,v2f64,v2i64], 128,
+llvm/lib/Target/PowerPC/PPCRegisterInfo.td:430:def VSRC  : RegisterClass<"PPC", [v4i32,v4f32,v2f64,v2i64], 128,
+llvm/lib/Target/NVPTX/NVPTXISelLowering.cpp:587:  addRegisterClass(MVT::v2i16, &NVPTX::B32RegClass);
+llvm/lib/Target/NVPTX/NVPTXISelLowering.cpp:588:  addRegisterClass(MVT::v4i8, &NVPTX::B32RegClass);
+llvm/lib/Target/NVPTX/NVPTXISelLowering.cpp:600:    addRegisterClass(MVT::v2i32, &NVPTX::B64RegClass);
+llvm/lib/Target/RISCV/RISCVISelLowering.cpp:248:    addRegisterClass(MVT::riscv_nxv1i8x2, &RISCV::VRN2M1RegClass);
+llvm/lib/Target/RISCV/RISCVISelLowering.cpp:249:    addRegisterClass(MVT::riscv_nxv1i8x3, &RISCV::VRN3M1RegClass);
+llvm/lib/Target/RISCV/RISCVISelLowering.cpp:250:    addRegisterClass(MVT::riscv_nxv1i8x4, &RISCV::VRN4M1RegClass);
+llvm/lib/Target/RISCV/RISCVISelLowering.cpp:251:    addRegisterClass(MVT::riscv_nxv1i8x5, &RISCV::VRN5M1RegClass);
+llvm/lib/Target/RISCV/RISCVISelLowering.cpp:252:    addRegisterClass(MVT::riscv_nxv1i8x6, &RISCV::VRN6M1RegClass);
+llvm/lib/Target/RISCV/RISCVISelLowering.cpp:253:    addRegisterClass(MVT::riscv_nxv1i8x7, &RISCV::VRN7M1RegClass);
+llvm/lib/Target/RISCV/RISCVISelLowering.cpp:254:    addRegisterClass(MVT::riscv_nxv1i8x8, &RISCV::VRN8M1RegClass);
+llvm/lib/Target/RISCV/RISCVISelLowering.cpp:255:    addRegisterClass(MVT::riscv_nxv2i8x2, &RISCV::VRN2M1RegClass);
+llvm/lib/Target/RISCV/RISCVISelLowering.cpp:256:    addRegisterClass(MVT::riscv_nxv2i8x3, &RISCV::VRN3M1RegClass);
+llvm/lib/Target/RISCV/RISCVISelLowering.cpp:257:    addRegisterClass(MVT::riscv_nxv2i8x4, &RISCV::VRN4M1RegClass);
+llvm/lib/Target/RISCV/RISCVISelLowering.cpp:258:    addRegisterClass(MVT::riscv_nxv2i8x5, &RISCV::VRN5M1RegClass);
+llvm/lib/Target/RISCV/RISCVISelLowering.cpp:259:    addRegisterClass(MVT::riscv_nxv2i8x6, &RISCV::VRN6M1RegClass);
+llvm/lib/Target/RISCV/RISCVISelLowering.cpp:260:    addRegisterClass(MVT::riscv_nxv2i8x7, &RISCV::VRN7M1RegClass);
+llvm/lib/Target/RISCV/RISCVISelLowering.cpp:261:    addRegisterClass(MVT::riscv_nxv2i8x8, &RISCV::VRN8M1RegClass);
+llvm/lib/Target/RISCV/RISCVISelLowering.cpp:262:    addRegisterClass(MVT::riscv_nxv4i8x2, &RISCV::VRN2M1RegClass);
+llvm/lib/Target/RISCV/RISCVISelLowering.cpp:263:    addRegisterClass(MVT::riscv_nxv4i8x3, &RISCV::VRN3M1RegClass);
+llvm/lib/Target/RISCV/RISCVISelLowering.cpp:264:    addRegisterClass(MVT::riscv_nxv4i8x4, &RISCV::VRN4M1RegClass);
+llvm/lib/Target/RISCV/RISCVISelLowering.cpp:265:    addRegisterClass(MVT::riscv_nxv4i8x5, &RISCV::VRN5M1RegClass);
+llvm/lib/Target/RISCV/RISCVISelLowering.cpp:266:    addRegisterClass(MVT::riscv_nxv4i8x6, &RISCV::VRN6M1RegClass);
+llvm/lib/Target/RISCV/RISCVISelLowering.cpp:267:    addRegisterClass(MVT::riscv_nxv4i8x7, &RISCV::VRN7M1RegClass);
+llvm/lib/Target/RISCV/RISCVISelLowering.cpp:268:    addRegisterClass(MVT::riscv_nxv4i8x8, &RISCV::VRN8M1RegClass);
+llvm/lib/Target/RISCV/RISCVISelLowering.cpp:269:    addRegisterClass(MVT::riscv_nxv8i8x2, &RISCV::VRN2M1RegClass);
+llvm/lib/Target/RISCV/RISCVISelLowering.cpp:270:    addRegisterClass(MVT::riscv_nxv8i8x3, &RISCV::VRN3M1RegClass);
+llvm/lib/Target/RISCV/RISCVISelLowering.cpp:271:    addRegisterClass(MVT::riscv_nxv8i8x4, &RISCV::VRN4M1RegClass);
+llvm/lib/Target/RISCV/RISCVISelLowering.cpp:272:    addRegisterClass(MVT::riscv_nxv8i8x5, &RISCV::VRN5M1RegClass);
+llvm/lib/Target/RISCV/RISCVISelLowering.cpp:273:    addRegisterClass(MVT::riscv_nxv8i8x6, &RISCV::VRN6M1RegClass);
+llvm/lib/Target/RISCV/RISCVISelLowering.cpp:274:    addRegisterClass(MVT::riscv_nxv8i8x7, &RISCV::VRN7M1RegClass);
+llvm/lib/Target/RISCV/RISCVISelLowering.cpp:275:    addRegisterClass(MVT::riscv_nxv8i8x8, &RISCV::VRN8M1RegClass);
+llvm/lib/Target/RISCV/RISCVISelLowering.cpp:276:    addRegisterClass(MVT::riscv_nxv16i8x2, &RISCV::VRN2M2RegClass);
+llvm/lib/Target/RISCV/RISCVISelLowering.cpp:277:    addRegisterClass(MVT::riscv_nxv16i8x3, &RISCV::VRN3M2RegClass);
+llvm/lib/Target/RISCV/RISCVISelLowering.cpp:278:    addRegisterClass(MVT::riscv_nxv16i8x4, &RISCV::VRN4M2RegClass);
+llvm/lib/Target/RISCV/RISCVISelLowering.cpp:279:    addRegisterClass(MVT::riscv_nxv32i8x2, &RISCV::VRN2M4RegClass);
+llvm/lib/Target/Xtensa/XtensaISelLowering.cpp:66:    addRegisterClass(MVT::v1i1, &Xtensa::BRRegClass);
+llvm/lib/Target/Xtensa/XtensaRegisterInfo.td:300:def BR : RegisterClass<"Xtensa", [v1i1], 8, (add B0, B1,
+llvm/lib/Target/ARM/ARMRegisterInfo.td:414:def VCCR : RegisterClass<"ARM", [i32, v16i1, v8i1, v4i1, v2i1], 32, (add VPR)> {
+llvm/lib/Target/ARM/ARMRegisterInfo.td:469:def DPR : RegisterClass<"ARM", [f64, v8i8, v4i16, v2i32, v1i64, v2f32, v4f16, v4bf16], 64,
+llvm/lib/Target/ARM/ARMRegisterInfo.td:490:def DPR_VFP2 : RegisterClass<"ARM", [f64, v8i8, v4i16, v2i32, v1i64, v2f32, v4f16, v4bf16], 64,
+llvm/lib/Target/ARM/ARMRegisterInfo.td:497:def DPR_8 : RegisterClass<"ARM", [f64, v8i8, v4i16, v2i32, v1i64, v2f32, v4f16, v4bf16], 64,
+llvm/lib/Target/ARM/ARMRegisterInfo.td:503:def QPR : RegisterClass<"ARM", [v16i8, v8i16, v4i32, v2i64, v4f32, v2f64, v8f16, v8bf16], 128,
+llvm/lib/Target/ARM/ARMRegisterInfo.td:514:def QPR_VFP2 : RegisterClass<"ARM", [v16i8, v8i16, v4i32, v2i64, v4f32, v2f64],
+llvm/lib/Target/ARM/ARMRegisterInfo.td:520:def QPR_8 : RegisterClass<"ARM", [v16i8, v8i16, v4i32, v2i64, v4f32, v2f64],
+llvm/lib/Target/ARM/ARMRegisterInfo.td:528:def MQPR : RegisterClass<"ARM", [v16i8, v8i16, v4i32, v2i64, v4f32, v2f64, v8f16],
+llvm/lib/Target/ARM/ARMRegisterInfo.td:541:def DPair : RegisterClass<"ARM", [v16i8, v8i16, v4i32, v2i64, v4f32, v2f64],
+llvm/lib/Target/ARM/ARMRegisterInfo.td:589:def QQPR : RegisterClass<"ARM", [v4i64], 256, (add Tuples2Q)> {
+llvm/lib/Target/ARM/ARMRegisterInfo.td:596:def MQQPR : RegisterClass<"ARM", [v4i64], 256, (trunc QQPR, 7)>;
+llvm/lib/Target/ARM/ARMRegisterInfo.td:606:def DQuad : RegisterClass<"ARM", [v4i64], 256,
+llvm/lib/Target/ARM/ARMRegisterInfo.td:615:def QQQQPR : RegisterClass<"ARM", [v8i64], 256, (add Tuples2QQ)> {
+llvm/lib/Target/ARM/ARMRegisterInfo.td:622:def MQQQQPR : RegisterClass<"ARM", [v8i64], 256, (trunc QQQQPR, 5)>;
+llvm/lib/Target/ARM/ARMRegisterInfo.td:631:def DPairSpc : RegisterClass<"ARM", [v2i64], 64, (add Tuples2DSpc)>;
+llvm/lib/Target/ARM/ARMRegisterInfo.td:650:def DQuadSpc : RegisterClass<"ARM", [v4i64], 64, (add Tuples3DSpc)>;
